@@ -21,8 +21,6 @@ struct Media {
         self.filename = "photo\(arc4random()).jpeg"
         
         guard let data = image.jpegData(compressionQuality: 0.5) else { return nil }
-        //guard let data = image.pngData() else { return nil }
-        //guard let data = image.imageAsset else { return nil }
         
         self.data = data
     }
